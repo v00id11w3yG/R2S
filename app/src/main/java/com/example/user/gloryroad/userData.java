@@ -4,11 +4,11 @@ import android.content.Context;
 import android.content.SharedPreferences;
 
 
-public class userData {
+public class userData implements playerInterface {
     private static SharedPreferences data = null;
 
     public static void create(Context mainActivity) {
-        String prefsTag =  "saveFile";
+        String prefsTag =  "anotherLife";
         data = mainActivity.getSharedPreferences(prefsTag,0);
     }
 
